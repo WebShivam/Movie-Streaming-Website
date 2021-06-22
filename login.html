@@ -2,8 +2,7 @@
 <html>
   <head>
     <title>Sign In</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -75,23 +74,21 @@
     </script>
 
     <style>
-         #scrollToTopButton{
-position: fixed;
-bottom: 15px;
-right: 10px;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color: white;
-color: black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
-}
+      #scrollToTopButton{
+          position: sticky;
+          bottom: 40px;
+          left: 95%;
+          font-size: 25px;
+          z-index: 99;
+          width: 50px;
+          height: 50px;
+          background-color: white;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          padding: 6px;
+          border-radius: 50%;
+      }     
       h1 {
         margin: auto;
         width: max-content;
@@ -109,6 +106,16 @@ box-shadow: 0 6px 10px 0px gray;
         height: 12px;
         display: block;
       }
+      .space{
+        /* opacity: 1; */
+        width: 310px;
+        height: 20vh;
+        padding: 30px 70px 30px 70px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 5px;
+        margin: 0px auto;
+    }
+
       .main {
         padding: 70px;
         width: 300px;
@@ -177,9 +184,11 @@ box-shadow: 0 6px 10px 0px gray;
         margin-right: 0.5em;
         fill: lightgreen;
       }
+
       .login{
           margin: 0 auto;
           width: 400px;
+          /* height:80vh; */
           background-color: rgba(0, 0, 0, 0.6);
           border-radius: 5px;
           padding: 30px 70px 143px 70px;
@@ -191,8 +200,8 @@ box-shadow: 0 6px 10px 0px gray;
       }
 
       .bottom{
-          background-color: rgba(0, 0, 0, 0.35);
-          color: #bdc7c9;
+         background-color: rgba(0, 0, 0, 0.35);
+         color: #bdc7c9;
 
       }
 
@@ -200,6 +209,7 @@ box-shadow: 0 6px 10px 0px gray;
           max-width: 1000px;
           margin: 0 auto;
           padding: 30px;
+          justify-content: space-between;
       }
 
       .bottom-flex{
@@ -385,7 +395,7 @@ box-shadow: 0 6px 10px 0px gray;
         </a>
     </div>
     <div class="login-div">
-      <form class="login" onsubmit="return DisplayResults()"
+      <form class="login align-self-start" onsubmit="return DisplayResults()"
       name="regform"
       autocomplete="off">
 
@@ -393,7 +403,7 @@ box-shadow: 0 6px 10px 0px gray;
       <h1 class="sign">Sign In</h1>
       <div id="errormessage"></div>
       <span class="seperator"></span>
-
+  
   <div class="input-text">
 
 
@@ -418,7 +428,7 @@ box-shadow: 0 6px 10px 0px gray;
         <span class="seperator"></span>
         <input class="signin-button" type="submit" value="Sign In" />
         <div class="remember-flex">
-            <div>
+            <div class="span">
 
             </div>
             <div class="help">
@@ -432,55 +442,55 @@ box-shadow: 0 6px 10px 0px gray;
         <div class="new-members">
             New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
         </div>
-        <br>
-        <div class="protection color_link help">
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
-        </div>
+        <br>      
       </form>
-    </div>
+      <div class="protection color_link help" style="margin: 0px 30%;">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+      </div>
+    <span class="seperator"></span>
+      <br>
+      <br>
+  </div>
 
-
+  <div class="bottom">
+    <div class="bottom-width">
+      Questions? <br>Ask on : <a href="https://www.google.com/gmail/" class="tel-link">Apna_theatre@gmail.com</a>
+      <div>
+        <ul class="bottom-flex">
+          <li class="list-bottom">
+            <a href="#" class="link-bottom">
+              FAQ
+            </a>
+          </li>
+          <li class="list-bottom">
+            <a href="#" class="link-bottom">
+              Help Center
+            </a>
+          </li>
+          <li class="list-bottom">
+            <a href="#" class="link-bottom">
+              Terms of Use
+            </a>
+          </li>
+          <li class="list-bottom">
+            <a href="#" class="link-bottom">
+              Privacy
+            </a>
+          </li>
   
-
-    <div class="bottom">
-        <div class="bottom-width">
-            Questions? <br>Ask on : <a href="https://www.google.com/gmail/" class="tel-link">Apna_theatre@gmail.com</a>
-            <div>
-                <ul class="bottom-flex">
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            FAQ
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Help Center
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Terms of Use
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Privacy
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div>
-                <select class="fa select-language">
-                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
-                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
-                </select>
-            </div>
-        </div>
+        </ul>
+      </div>
+      <div>
+        <select class="fa select-language">
+          <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+          <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
+        </select>
+      </div>
     </div>
-      <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
-    </button>
+  </div>
+  <button id="scrollToTopButton" title="Go to top" class="ml-5">
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+  </button>
     <script>
     $(document).ready(function(){
       var scrollTopButton = document.getElementById("scrollToTopButton");
